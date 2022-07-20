@@ -1,11 +1,12 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
 
 }
+
 /* header section styles */
-.header-section{
+.header-section {
     display: flex;
     margin: 50px 100px;
     background-color: black;
@@ -13,19 +14,22 @@
     color: white;
     padding: 50px 50px 0px 50px;
 }
-.header-text{
+
+.header-text {
     width: 50%;
     margin: 50px;
     padding: 50px;
 }
 
-.header-text h1{
+.header-text h1 {
     font-size: 3em;
     font-weight: 900;
 }
-.header-text p{
+
+.header-text p {
     margin: 50px 0px;
 }
+
 .btn {
     text-decoration: none;
     color: white;
@@ -33,18 +37,22 @@
     padding: 15px;
     border-radius: 5px;
 }
-.header-image{
+
+.header-image {
     width: 50%;
 }
-.header-image img{
+
+.header-image img {
     width: 100%;
 }
+
 /* main section styles */
 .main-section {
     display: flex;
     margin: 50px 100px;
 }
-.section-menu{
+
+.section-menu {
     margin-top: 16px;
     border-radius: 10px;
     width: 300px;
@@ -53,7 +61,8 @@
     flex-direction: column;
     background-color: black;
 }
-.section-menu > a{
+
+.section-menu>a {
     text-decoration: none;
     margin: 20px 30px;
     background-color: white;
@@ -61,41 +70,89 @@
     padding: 15px;
     color: black;
 }
-.menu-details{
+
+.selected {
+    background-color: brown;
+}
+
+.menu-details {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
-.card{
+
+.card {
     border: 1px solid lightslategray;
     border-radius: 14px;
     margin: 15px;
 }
-.card img{
+
+.card img {
     width: 100%;
     margin-bottom: 10px;
 }
-.card-text{
+
+.card-text {
     margin-left: 10px;
     padding-left: 10px;
 }
-.card a{
+
+.card a {
     text-decoration: none;
     border: 2px solid lightgrey;
     border-radius: 5px;
 }
-.menu-details-text{
+
+.menu-details-text {
     margin: 10px 0px;
     padding: 10px 0px;
 }
-.time-chat{
+
+.time-chat {
     display: flex;
     column-gap: 50px;
 }
-.time{
+
+.time {
     display: flex;
     column-gap: 15px;
 }
-.chat{
+
+.chat {
     display: flex;
     column-gap: 15px;
+}
+
+/* tablet device styles */
+.tablet-section {
+    margin: 30px;
+    position: relative;
+    top: 5px;
+    left: 650px;
+    display: none;
+
+}
+
+/* footer stylesheets */
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+.footer h1 {
+    margin: 50px 0;
+}
+
+.important-links {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    font-weight: lighter;
+}
+
+.link a {
+    text-decoration: none;
+    color: white;
 }
