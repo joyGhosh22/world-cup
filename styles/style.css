@@ -7,8 +7,9 @@
 
 /* header section styles */
 .header-section {
+    width: 90%;
     display: flex;
-    margin: 50px 100px;
+    margin: 50px auto;
     background-color: black;
     border-radius: 10px;
     color: white;
@@ -36,6 +37,11 @@
     background-color: red;
     padding: 15px;
     border-radius: 5px;
+}
+.header-text a:hover{
+    background-color: white;
+    color: brown;
+    animation: 3s ease-in-out;
 }
 
 
@@ -80,6 +86,15 @@
     background-color: red;
     color: white;
 }
+#up-selected {
+    background-color: red;
+    color: white;
+}
+#all-groups{
+    background-color: red;
+    color: white;
+}
+
 
 .menu-details {
     display: grid;
@@ -130,10 +145,7 @@
 
 /* tablet device styles */
 .tablet-section {
-    margin: 30px;
-    position: relative;
-    top: 5px;
-    left: 650px;
+    margin-top: 30px;
     display: none;
 
 }
@@ -145,6 +157,7 @@
     color: white;
     text-align: center;
     padding: 50px;
+    margin-top: 40px;
 }
 
 .footer h1 {
@@ -162,10 +175,18 @@
     text-decoration: none;
     color: white;
 }
+.social-icon{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.social-icon i{
+    margin-right: 40px;
+}
 
 /* website responsiveness styles */
 
-
+/* mobile screen responsiveness */
 @media only screen and (max-width: 576px) {
     .header-section {
         flex-direction: column;
@@ -178,6 +199,9 @@
     .header-text {
         margin: 0;
         padding: 0;
+    }
+    .main-section{
+        flex-direction: column;
     }
 
     .section-menu {
@@ -193,8 +217,11 @@
         align-items: center;
     }
 }
-
-/* @media only screen and (min-width:768px) and (max-width:992px) {
+/* tablet responsiveness */
+@media only screen and (min-width:768px) and (max-width:992px) {
+    .header-section{
+        width: 100%;
+    }
     .main-section {
         display: flex;
         flex-direction: column;
@@ -213,8 +240,14 @@
 
     .tablet-section {
         display: inline;
-        justify-content: start;
-        align-items: flex-start;
+        margin-left: 300px;
+        margin-bottom: 200px;
+   }
+   .tablet-section a{
+    text-align: center;
+   }
+   .important-links{
+    flex-wrap: wrap;
+   }
 
-    }
-} */
+}
