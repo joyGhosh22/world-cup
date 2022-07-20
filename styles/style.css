@@ -17,8 +17,8 @@
 
 .header-text {
     width: 50%;
-    margin: 50px;
-    padding: 50px;
+    margin: 5px;
+    padding: 5px;
 }
 
 .header-text h1 {
@@ -158,3 +158,29 @@
     text-decoration: none;
     color: white;
 }
+
+/* website responsiveness styles */
+
+@media only screen and (max-width:768px) {
+    .main-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-menu {
+        flex-direction: row;
+        width: 100%;
+        background-color: white;
+
+    }
+
+    .menu-details {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tablet-section {
+        display: inline;
+        justify-content: start;
+        align-items: flex-start;
+
+    }
