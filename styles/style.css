@@ -38,10 +38,19 @@
     padding: 15px;
     border-radius: 5px;
 }
-.header-text a:hover{
-    background-color: white;
-    color: brown;
-    animation: 3s ease-in-out;
+
+.header-text a:hover {
+    animation: mymove 1s infinite;
+}
+
+@keyframes mymove {
+    from {
+        background-color: red;
+    }
+
+    to {
+        background-color: blue;
+    }
 }
 
 
@@ -86,11 +95,13 @@
     background-color: red;
     color: white;
 }
+
 #up-selected {
     background-color: red;
     color: white;
 }
-#all-groups{
+
+#all-groups {
     background-color: red;
     color: white;
 }
@@ -99,6 +110,25 @@
 .menu-details {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+}
+
+.flag-cards {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightslategrey;
+    margin-left: 10px;
+    margin-top: 16px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.card-flags {
+    display: flex;
+}
+
+.flags {
+    display: flex;
+    justify-content: space-between;
 }
 
 .card {
@@ -115,6 +145,12 @@
 .card-text {
     margin-left: 10px;
     padding-left: 10px;
+}
+
+.flag-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .card a {
@@ -175,13 +211,20 @@
     text-decoration: none;
     color: white;
 }
-.social-icon{
+
+.social-icon {
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
-.social-icon i{
-    margin-right: 40px;
+
+.social-icon a {
+    text-decoration: none;
+    color: white;
+}
+
+.social-icon i {
+    margin-left: 25px;
 }
 
 /* website responsiveness styles */
@@ -200,7 +243,19 @@
         margin: 0;
         padding: 0;
     }
-    .main-section{
+
+    .header-text p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .header-image {
+        margin-top: 10px;
+
+    }
+
+    .main-section {
         flex-direction: column;
     }
 
@@ -217,11 +272,13 @@
         align-items: center;
     }
 }
+
 /* tablet responsiveness */
 @media only screen and (min-width:768px) and (max-width:992px) {
-    .header-section{
+    .header-section {
         width: 100%;
     }
+
     .main-section {
         display: flex;
         flex-direction: column;
@@ -242,12 +299,14 @@
         display: inline;
         margin-left: 300px;
         margin-bottom: 200px;
-   }
-   .tablet-section a{
-    text-align: center;
-   }
-   .important-links{
-    flex-wrap: wrap;
-   }
+    }
+
+    .tablet-section a {
+        text-align: center;
+    }
+
+    .important-links {
+        flex-wrap: wrap;
+    }
 
 }
